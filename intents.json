@@ -2,32 +2,37 @@
         {"tag": "greeting",
          "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
          "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
-         "context_set": ""
+         "context_set": [""]
         },
         {"tag": "goodbye",
          "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
-         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
-         "context_set": ""
+         "responses": ["See you!", "Talk to you later", "Goodbye!"],
+         "context_set": [""]
         },
-        {"tag": "age",
-         "patterns": ["how old", "how old is brian", "what is your age", "how old are you", "age?"],
-         "responses": ["I am 18 years old!", "18 years young!"],
-         "context_set": ""
+        {"tag": "options",
+         "patterns": ["What help can you offer me", "I need help", "Some help", "help"],
+         "responses": ["I can guide you through mental depression remedies", "Tell me what the problem is, am ready to assist"],
+         "context_set": [""]
         },
-        {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?"],
-         "responses": ["You can call me Brian.", "I'm Brian!", "I'm Brian aka Briodev."],
-         "context_set": ""
+        {"tag": "problem",
+         "patterns": ["I have lost appetite", "I have a lot of anxiety", "I am unable to sleep", "I have fatigue most days", "I easily loose concentration", "I have been thinking suicide", "I feel hopeless"],
+         "responses": ["I will give the following recommendations, if none of them feel satisfying, kindly type 'nearest hospital' and I will help you search nearest hospital to meet a real therapist:)  :\nPrescribe an antidepressant or antianxiety from the nearby pharmacy. \nExpose yourself to a dose of sunlight in the morning. \nAim for 30 minutes of physical activity 3 to 5 dats a week. This mostly is body exercise. \nIn case you've been using alcohol or drugs, aim at stopping the use. These substances increases depression."],
+         "context_set": [""]
         },
         {"tag": "hospital",
-         "patterns": ["I am not feeling well today", "Been having a slight headache today", "what do you recommend?"],
-         "responses": ["What might be the problem", "Tell me the condition", "How long has this been going on?"],
-         "context_set": ""
+         "patterns": ["I want to search for the nearest hospital", "Nearest hospital", "Hospital"],
+         "responses": ["Provide your county", "Searching hospital, please waite..."],
+         "context_set": [""]
         },
         {"tag": "help",
          "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
          "responses": ["We are open 7am-4pm Monday-Friday!"],
-         "context_set": ""
+         "context_set": [""]
+        },
+        {"tag": "noanswer",
+        "patterns": [],
+        "responses": ["I didn't understand that. Kindly ask a different question."],
+        "context_set": [""]
         }
    ]
 }
